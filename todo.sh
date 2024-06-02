@@ -236,8 +236,8 @@ function list_today_tasks {
 }
 
 function list_tasks_date {
-  read -p "Enter date to list tasks (format YYYY-MM-DD): " due_date
-  if ! [[ "$due_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+  read -p "Enter date to list tasks (format DD-MM-YYYY): " due_date
+  if ! [[ "$due_date" =~ ^[0-9]{2}-[0-9]{2}-[0-9]{4}$ ]]; then
     error_msg_redirect "Invalid date format while searching for a task!"
     exit 1
   fi
