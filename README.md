@@ -44,12 +44,6 @@ Run the script with the following commands:
     ./todo.sh
     ```
 
-- **List All Tasks:**
-
-    ```bash
-    ./todo.sh l
-    ```
-
 - **Create a New Task:**
 
     ```bash
@@ -125,7 +119,7 @@ Run the script with the following commands:
 - **list**
     - Description: List tasks for a given date.
     - Prompts:
-        - Enter date to list tasks (format YYYY-MM-DD): Required.
+        - Enter date to list tasks (format DD-MM-YYYY): Required.
 
 - **search**
     - Description: Search for a task by title.
