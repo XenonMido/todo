@@ -23,4 +23,16 @@ Follow these steps to install the Ultimate ToDo Manager:
    ```bash
    cd todo
    ```
+3. **Make the script executable**:
+   ```bash
+   chmod +x todo.sh
+   ```
+
+
+
+
+
+
+
+
 
