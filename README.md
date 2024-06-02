@@ -34,51 +34,147 @@ Follow these steps to install the Ultimate ToDo Manager:
 
 
 
+## Usage
 
-### Detailed Command Descriptions:
+Run the script with the following commands:
 
-```markdown
-## Detailed Command Descriptions
+- **Display Tasks Due Today:**
 
-### `create`
-- **Description**: Create a new task.
-- **Prompts**:
-  - `Enter title`: Required.
-  - `Enter description`: Optional.
-  - `Enter due date (format DD-MM-YYYY)`: Required.
-  - `Enter due time (format HH:MM)`: Optional.
+    ```bash
+    ./todo.sh
+    ```
 
-### `update`
-- **Description**: Update an existing task.
-- **Prompts**:
-  - `Enter task ID to update`: Required.
-  - `Enter new title`: Optional.
-  - `Enter new description`: Optional.
-  - `Enter new due date`: Optional (format DD-MM-YYYY).
-  - `Enter new due time`: Optional (format HH:MM).
-  - `Enter new completion state (true/false)`: Optional.
+- **List All Tasks:**
 
-### `delete`
-- **Description**: Delete an existing task.
-- **Prompts**:
-  - `Enter task ID to delete`: Required.
+    ```bash
+    ./todo.sh l
+    ```
 
-### `show`
-- **Description**: Show details of a task.
-- **Prompts**:
-  - `Enter task ID to show`: Required.
+- **Create a New Task:**
 
-### `list`
-- **Description**: List tasks for a given date.
-- **Prompts**:
-  - `Enter date to list tasks (format YYYY-MM-DD)`: Required.
+    ```bash
+    ./todo.sh create
+    ```
 
-### `search`
-- **Description**: Search for a task by title.
-- **Prompts**:
-  - `Enter title to search`: Required.
+- **Update an Existing Task:**
 
-### `help`
-- **Description**: Display help message with all available commands and their descriptions.
+    ```bash
+    ./todo.sh update
+    ```
 
+- **Delete an Existing Task:**
 
+    ```bash
+    ./todo.sh delete
+    ```
+
+- **Show Details of a Task:**
+
+    ```bash
+    ./todo.sh show
+    ```
+
+- **List Tasks for a Specific Date:**
+
+    ```bash
+    ./todo.sh list
+    ```
+
+- **Search for a Task by Title:**
+
+    ```bash
+    ./todo.sh search
+    ```
+
+- **Display Help Message:**
+
+    ```bash
+    ./todo.sh help
+    ```
+
+### Detailed Command Descriptions
+
+- **create**
+    - Description: Create a new task.
+    - Prompts:
+        - Enter title: Required.
+        - Enter description: Optional.
+        - Enter due date (format DD-MM-YYYY): Required.
+        - Enter due time (format HH:MM): Optional.
+
+- **update**
+    - Description: Update an existing task.
+    - Prompts:
+        - Enter task ID to update: Required.
+        - Enter new title: Optional.
+        - Enter new description: Optional.
+        - Enter new due date: Optional (format DD-MM-YYYY).
+        - Enter new due time: Optional (format HH:MM).
+        - Enter new completion state (true/false): Optional.
+
+- **delete**
+    - Description: Delete an existing task.
+    - Prompts:
+        - Enter task ID to delete: Required.
+
+- **show**
+    - Description: Show details of a task.
+    - Prompts:
+        - Enter task ID to show: Required.
+
+- **list**
+    - Description: List tasks for a given date.
+    - Prompts:
+        - Enter date to list tasks (format YYYY-MM-DD): Required.
+
+- **search**
+    - Description: Search for a task by title.
+    - Prompts:
+        - Enter title to search: Required.
+
+### Output
+
+The script formats and displays tasks in a user-friendly table with the following columns:
+
+- **ID:** Task ID.
+- **Title:** Task title.
+- **Description:** Task description.
+- **Due Date and Time:** Task due date and time.
+- **Completed:** Task completion status (true/false).
+
+### Example
+
+Here's how to create a new task:
+
+1. Run the command:
+
+    ```bash
+    ./todo.sh create
+    ```
+
+2. Follow the prompts to enter the task details:
+
+    - (required) Enter title: Finish project
+    - (optional) Enter description: Complete the final project for the course.
+    - (required) Enter due date (format DD-MM-YYYY): 15-06-2024
+    - (optional) Enter due time (format HH:MM): 23:59
+
+3. The task is added, and the script confirms the creation:
+
+    ```bash
+    Task created successfully.
+    ```
+
+### Note
+
+- Ensure the **todo.csv** file is in the same directory as the script.
+- The script auto-generates the **todo.csv** file if it doesn't exist.
+- Task IDs are automatically assigned and reorganized after each operation for consistency.
+
+### Pro Tip
+
+Stay organized and conquer your tasks with ease! 💪
+
+---
+
+Feel free to customize this README further to match your specific project. Happy organizing! 😊🚀
