@@ -15,3 +15,7 @@ Welcome to the **The Ultimate ToDo Manager**! This powerful yet simple command-l
 ## Installation
 
 Follow these steps to install the Ultimate ToDo Manager:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/todo-manager.git
+   ```
